@@ -1,10 +1,16 @@
 module Aucklandia
   class Client
-    BASE_URL = "https://api.at.govt.nz/v2"
+    include Aucklandia::Routes
 
     attr_reader :authorization_key
     def initialize(authorization_key)
       @authorization_key = authorization_key
+    end
+
+    def headers
+      {
+        "Ocp-Apim-Subscription-Key" => @authorization_key
+      }
     end
   end
 end

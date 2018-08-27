@@ -1,9 +1,6 @@
+require 'spec_helper'
 
 RSpec.describe Aucklandia::Client do
-  it 'has a base url endpoint' do
-    expect(described_class::BASE_URL).to eq "https://api.at.govt.nz/v2"
-  end
-
   describe '#initialize' do
     it 'raises an ArgumentError exception if no authorization key is provided' do
       expect {
