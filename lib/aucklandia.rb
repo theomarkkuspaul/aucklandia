@@ -1,5 +1,5 @@
 require "aucklandia/version"
+require "aucklandia/client"
 
 module Aucklandia
-  # Your code goes here...
 end
