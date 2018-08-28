@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "response": [{
+    "route_id": "32602-20180815114333_v70.9",
+    "agency_id": "GBT",
+    "route_short_name": "326",
+    "route_long_name": "Otahuhu Station To Mangere Town Centre Via Tidal Road",
+    "route_desc": null,
+    "route_type": 3,
+    "route_url": null,
+    "route_color": null,
+    "route_text_color": null
+  }, {
+    "route_id": "17107-20180815114333_v70.9",
+    "agency_id": "RTH",
+    "route_short_name": "171X",
+    "route_long_name": "Laingholm To City Centre Express",
+    "route_desc": null,
+    "route_type": 3,
+    "route_url": null,
+    "route_color": null,
+    "route_text_color": null
+  }]
+}
