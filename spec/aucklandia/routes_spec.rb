@@ -5,37 +5,47 @@ RSpec.describe Aucklandia::Routes do
 
   describe '#get_routes' do
     context 'successful response' do
-      it 'returns a collection of bus routes', vcr: true do
-        successful_payload = instance_double('RestClient::Response', body: {
-                              "status": "OK",
-                              "response": [{
-                                "route_id": "32602-20180815114333_v70.9",
-                                "agency_id": "GBT",
-                                "route_short_name": "326",
-                                "route_long_name": "Otahuhu Station To Mangere Town Centre Via Tidal Road",
-                                "route_desc": nil,
-                                "route_type": 3,
-                                "route_url": nil,
-                                "route_color": nil,
-                                "route_text_color": nil
-                              }, {
-                                "route_id": "17107-20180815114333_v70.9",
-                                "agency_id": "RTH",
-                                "route_short_name": "171X",
-                                "route_long_name": "Laingholm To City Centre Express",
-                                "route_desc": nil,
-                                "route_type": 3,
-                                "route_url": nil,
-                                "route_color": nil,
-                                "route_text_color": nil
-                              }]
-                            }.to_json)
+      it 'returns a collection of bus routes' do
+        payload = File.read('spec/fixtures/get-routes.json')
+        successful_payload = instance_double('RestClient::Response', body: payload)
 
         allow(RestClient::Request).to receive(:execute)
                                   .and_return(successful_payload)
 
         expect(client.get_routes).to be_a Array
         expect(client.get_routes.length).to be 2
+      end
+    end
+  end
+
+  describe '#get_routes_by_short_name' do
+    let(:short_name) { 'OUT' }
+
+    context 'available short name' do
+      it 'responds with routes matching short name' do
+        payload = File.read('spec/fixtures/get-routes-by-short-name-successful.json')
+        successful_payload = instance_double('RestClient::Response', body: payload)
+
+        allow(RestClient::Request).to receive(:execute)
+                                  .and_return(successful_payload)
+
+        client.get_routes_by_short_name(short_name).each do |route|
+          expect(route['route_short_name']).to eq short_name
+        end
+      end
+    end
+
+    context 'short name does not match any routes' do
+      let(:short_name) { 'blahblahblah' }
+
+      it 'responds with an empty collection of routes' do
+        payload = File.read('spec/fixtures/get-routes-by-short-name-unsuccessful.json')
+        unsuccessful_payload = instance_double('RestClient::Response', body: payload)
+
+        allow(RestClient::Request).to receive(:execute)
+                                  .and_return(unsuccessful_payload)
+
+        expect(client.get_routes_by_short_name(short_name)).to be_empty
       end
     end
   end
