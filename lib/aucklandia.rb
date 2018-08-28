@@ -1,5 +1,6 @@
 require "aucklandia/version"
 require "aucklandia/routes"
+require "aucklandia/trips"
 require "aucklandia/client"
 
 require 'rest-client'

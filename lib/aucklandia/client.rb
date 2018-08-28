@@ -1,6 +1,7 @@
 module Aucklandia
   class Client
     include Aucklandia::Routes
+    include Aucklandia::Trips
 
     attr_reader :authorization_key
     def initialize(authorization_key)
