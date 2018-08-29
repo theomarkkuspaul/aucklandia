@@ -1,0 +1,33 @@
+{
+  "status": "OK",
+  "response": {
+    "entity": [{
+      "id": "2c68aea3-703a-5724-3f54-63200b3fe95e",
+      "is_deleted": false,
+      "vehicle": {
+        "trip": {
+          "trip_id": "439138218-20180815114333_v70.9",
+          "route_id": "03007-20180815114333_v70.9",
+          "start_time": "20:45:00",
+          "schedule_relationship": 0
+        },
+        "vehicle": {
+          "id": "37FA"
+        },
+        "position": {
+          "latitude": -36.9203,
+          "longitude": 174.784983,
+          "bearing": "353"
+        },
+        "timestamp": 1535532451.88,
+        "occupancy_status": 0
+      }
+    }],
+    "header": {
+      "gtfs_realtime_version": "1.0",
+      "incrementality": 0,
+      "timestamp": 1535532477.516
+    }
+  },
+  "error": null
+}
