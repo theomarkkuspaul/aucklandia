@@ -1,8 +1,6 @@
 # Aucklandia
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/aucklandia`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Ruby wrapper gem for the Auckland Transport API (still in the works). Get messed up on all of ATs delicious data. Submit a PR if you want.
 
 ## Installation
 

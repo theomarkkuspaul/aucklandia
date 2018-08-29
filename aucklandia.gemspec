@@ -10,7 +10,6 @@ Gem::Specification.new do |spec|
   spec.email         = ["theo.markkus.paul@gmail.com"]
 
   spec.summary       = %q{todo: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{todo: Write a longer description or delete this line.}
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
