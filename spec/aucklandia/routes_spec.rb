@@ -1,19 +1,12 @@
 require 'spec_helper'
 
 RSpec.describe Aucklandia::Routes do
-  let(:client) { Aucklandia::Client.new('password123') }
+  let(:client) { Aucklandia::Client.new(ENV['AUCKLANDIA_SECRET']) }
 
   describe '#get_routes' do
     context 'successful response' do
-      it 'returns a collection of bus routes' do
-        payload = File.read('spec/fixtures/get-routes.json')
-        successful_payload = instance_double('RestClient::Response', body: payload)
-
-        allow(RestClient::Request).to receive(:execute)
-                                  .and_return(successful_payload)
-
+      it 'returns a collection of bus routes', vcr: true do
         expect(client.get_routes).to be_a Array
-        expect(client.get_routes.length).to be 2
       end
     end
   end
@@ -22,13 +15,7 @@ RSpec.describe Aucklandia::Routes do
     let(:short_name) { 'OUT' }
 
     context 'available short name' do
-      it 'responds with routes matching short name' do
-        payload = File.read('spec/fixtures/get-routes-by-short-name-successful.json')
-        successful_payload = instance_double('RestClient::Response', body: payload)
-
-        allow(RestClient::Request).to receive(:execute)
-                                  .and_return(successful_payload)
-
+      it 'responds with routes matching short name', vcr: true do
         client.get_routes_by_short_name(short_name).each do |route|
           expect(route['route_short_name']).to eq short_name
         end
@@ -38,13 +25,7 @@ RSpec.describe Aucklandia::Routes do
     context 'short name does not match any routes' do
       let(:short_name) { 'blahblahblah' }
 
-      it 'responds with an empty collection of routes' do
-        payload = File.read('spec/fixtures/get-routes-by-short-name-unsuccessful.json')
-        unsuccessful_payload = instance_double('RestClient::Response', body: payload)
-
-        allow(RestClient::Request).to receive(:execute)
-                                  .and_return(unsuccessful_payload)
-
+      it 'responds with an empty collection of routes', vcr: true do
         expect(client.get_routes_by_short_name(short_name)).to be_empty
       end
     end

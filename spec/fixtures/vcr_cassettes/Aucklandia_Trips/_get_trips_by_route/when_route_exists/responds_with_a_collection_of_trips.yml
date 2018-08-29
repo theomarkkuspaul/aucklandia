@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.at.govt.nz/v2/gtfs/trips/routeid/73116-20180815114333_v70.9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin15.6.0 x86_64) ruby/2.2.3p173
+      Ocp-Apim-Subscription-Key:
+      - "<SECRET>"
+      Host:
+      - api.at.govt.nz
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Aug 2018 10:51:39 GMT
+      Server:
+      - Apache/2.4.33 (Win64) OpenSSL/1.1.0h
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD
+      Access-Control-Allow-Headers:
+      - Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token, Access-Control-Expose-Headers,
+        Authorization, Ocp-Apim-Subscription-Key, X-Crm-Id
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept,Accept-Encoding,User-Agent
+      Cache-Control:
+      - max-age=0
+      Expires:
+      - Thu, 30 Aug 2018 10:51:41 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAC9WSwWrDMAyG30XnrFhxnKR9hR22exnBTcxi5tlBdgqj9N1r
+        Wt+KSZfB2I6WPv0Wn30CH2SYPezg5RkKIOUnZ72C3f4E5OagOj3EZsMR66eS
+        YctaFIgV57w7NmyzjUNe0VH3iayaGrngLeboQHr6DjoqOXj9buPAqySrjImd
+        QZPqg3b2moQFHIzrP26xh67KbjrKKe2JrM5i13v96Ch0Vn5GGXY2JpXD15QK
+        5+JHihDZo4qW0BWKsOT/QFJbV49KWkRXSBLZxD/kSKDIPuXdR1pAVzjalr/j
+        6K0AReQoHS/5qRXnuQQAAA==
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 10:51:40 GMT
+- request:
+    method: get
+    uri: https://api.at.govt.nz/v2/gtfs/trips/routeid/73116-20180815114333_v70.9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin15.6.0 x86_64) ruby/2.2.3p173
+      Ocp-Apim-Subscription-Key:
+      - "<SECRET>"
+      Host:
+      - api.at.govt.nz
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Aug 2018 10:51:41 GMT
+      Server:
+      - Apache/2.4.33 (Win64) OpenSSL/1.1.0h
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD
+      Access-Control-Allow-Headers:
+      - Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token, Access-Control-Expose-Headers,
+        Authorization, Ocp-Apim-Subscription-Key, X-Crm-Id
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept,Accept-Encoding,User-Agent
+      Cache-Control:
+      - max-age=0
+      Expires:
+      - Thu, 30 Aug 2018 10:51:42 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAC9WSwWrDMAyG30XnrFhxnKR9hR22exnBTcxi5tlBdgqj9N1r
+        Wt+KSZfB2I6WPv0Wn30CH2SYPezg5RkKIOUnZ72C3f4E5OagOj3EZsMR66eS
+        YctaFIgV57w7NmyzjUNe0VH3iayaGrngLeboQHr6DjoqOXj9buPAqySrjImd
+        QZPqg3b2moQFHIzrP26xh67KbjrKKe2JrM5i13v96Ch0Vn5GGXY2JpXD15QK
+        5+JHihDZo4qW0BWKsOT/QFJbV49KWkRXSBLZxD/kSKDIPuXdR1pAVzjalr/j
+        6K0AReQoHS/5qRXnuQQAAA==
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 10:51:42 GMT
+recorded_with: VCR 4.0.0
