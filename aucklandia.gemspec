@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Theo Markkus Paul"]
   spec.email         = ["theo.markkus.paul@gmail.com"]
 
-  spec.summary       = %q{todo: Write a short summary, because RubyGems requires one.}
+  spec.summary       = 'Auckland Transport API wrapper gem. Provides a suite of easy-to-use methods to get your hands on AT\'s data effectively.'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
