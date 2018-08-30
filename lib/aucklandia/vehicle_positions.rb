@@ -5,7 +5,7 @@ module Aucklandia
     def get_vehicle_positions(trip_id=nil)
       url = [BASE_URL, VEHICLE_POSITIONS_ENDPOINT].join('')
 
-      url << "?trip_id=#{trip_id}" if trip_id
+      url << "?tripid=#{trip_id}" if trip_id
 
       response = RestClient::Request.execute(method: :get,
                                              url: url,
