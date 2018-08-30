@@ -6,13 +6,7 @@ RSpec.describe Aucklandia::VehiclePositions do
 	describe '#get_vehicle_positions' do
 		context 'with no provided parameters' do
 			context 'active vehicles' do
-				it 'responds with a collection of all live vehicle positions' do
-					payload = File.read('spec/fixtures/get-vehicle-positions-successful.json')
-	        successful_payload = instance_double('RestClient::Response', body: payload)
-
-	        allow(RestClient::Request).to receive(:execute)
-	                                  .and_return(successful_payload)
-
+				it 'responds with a collection of all live vehicle positions', vcr: true do
 					expect(client.get_vehicle_positions).to_not be_empty
 					client.get_vehicle_positions.each do |vehicle_position|
 						expect(vehicle_position).to have_key 'vehicle'

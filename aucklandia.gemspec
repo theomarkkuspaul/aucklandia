@@ -9,8 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Theo Markkus Paul"]
   spec.email         = ["theo.markkus.paul@gmail.com"]
 
-  spec.summary       = %q{todo: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{todo: Write a longer description or delete this line.}
+  spec.summary       = 'Auckland Transport API wrapper gem. Provides a suite of easy-to-use methods to get your hands on AT\'s data effectively.'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -37,4 +36,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rspec-mocks", "~> 3.8"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "pry"
 end
