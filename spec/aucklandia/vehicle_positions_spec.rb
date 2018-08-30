@@ -16,7 +16,7 @@ RSpec.describe Aucklandia::VehiclePositions do
 
 			context 'with trip_id parameter' do
 				it 'responds with a collection of vehicle positions', vcr: true do
-	        trip_id = '476138619-20180702170310_v67.28'
+	        trip_id = '476143384-20180815114333_v70.9'
 
 	        client.get_vehicle_positions(trip_id).each do |vehicle_position|
 		        expect(vehicle_position).to have_key 'vehicle'
