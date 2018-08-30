@@ -20,7 +20,6 @@ RSpec.describe Aucklandia::VehiclePositions do
 
 	        client.get_vehicle_positions(trip_id).each do |vehicle_position|
 		        expect(vehicle_position).to have_key 'vehicle'
-		        binding.pry if vehicle_position['vehicle']['trip']['trip_id'] != trip_id
 		        expect(vehicle_position['vehicle']['trip']['trip_id']).to eql trip_id
 	        end
 				end
