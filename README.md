@@ -20,7 +20,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To interact with Auckland Transport's API, simply instantiate a client:
+
+```ruby
+client = Aucklandia::Client.new('<AT-API-KEY>')
+```
+
+Examples
+
+```ruby
+# GET all routes
+client.get_routes
+
+# GET all routes by route short name identifier
+route_short_name = "OUT"
+client.get_routes_by_short_name(route_short_name)
+
+# GET all trips by route ID
+route_id = '12345'
+client.get_trips_by_route_id(route_id)
+```
 
 ## Development
 
