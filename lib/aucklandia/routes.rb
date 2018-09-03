@@ -3,23 +3,17 @@ module Aucklandia
     ROUTE_ENDPOINT = '/gtfs/routes'
 
     def get_routes
-      url = [BASE_URL, ROUTE_ENDPOINT].join('')
+      url = build_url(BASE_URL, ROUTE_ENDPOINT)
 
-      response = RestClient::Request.execute(method: :get,
-                                             url: url,
-                                             headers: headers)
-                                    .body
+      response = get(url)
 
       JSON.parse(response)['response']
     end
 
     def get_routes_by_short_name(short_name)
-      url = [BASE_URL, ROUTE_ENDPOINT, '/routeShortName/', short_name].join('')
+      url = build_url(BASE_URL, ROUTE_ENDPOINT, '/routeShortName/', short_name)
 
-      response = RestClient::Request.execute(method: :get,
-                                             url: url,
-                                             headers: headers)
-                                    .body
+      response = get(url)
 
       JSON.parse(response)['response']
     end

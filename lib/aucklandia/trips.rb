@@ -3,12 +3,9 @@ module Aucklandia
     TRIPS_ENDPOINT = '/gtfs/trips'
 
     def get_trips_by_route(route_id)
-      url = [BASE_URL, TRIPS_ENDPOINT, '/routeid/', route_id].join('')
+      url = build_url(BASE_URL, TRIPS_ENDPOINT, '/routeid/', route_id)
 
-      response = RestClient::Request.execute(method: :get,
-                                             url: url,
-                                             headers: headers)
-                                    .body
+      response = get(url)
 
       JSON.parse(response)['response']
     end
