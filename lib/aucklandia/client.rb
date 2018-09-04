@@ -3,6 +3,7 @@ module Aucklandia
     include Aucklandia::Routes
     include Aucklandia::Trips
     include Aucklandia::VehiclePositions
+    include Aucklandia::Versions
 
     include Requestable
 
