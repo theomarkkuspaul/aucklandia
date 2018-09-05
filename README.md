@@ -50,6 +50,9 @@ client.get_vehicle_positions(trip_id)
 # GET all live vehicle positions by route ID
 route_id = '<route-id>'
 client.get_vehicle_positions_by_route_id(route_id)
+
+# GET all versions
+client.get_versions
 ```
 
 ## Development
