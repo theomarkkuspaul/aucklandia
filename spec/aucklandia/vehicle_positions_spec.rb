@@ -26,4 +26,36 @@ RSpec.describe Aucklandia::VehiclePositions do
 			end
 		end
 	end
+
+	describe '#get_vehicle_positions_by_route_id' do
+
+		context 'with active route id' do
+			it 'responds with a collection of vehicle positions', vcr: true do
+				route_id = '10502-20180815114333_v70.9'
+
+				expect(client.get_vehicle_positions_by_route_id(route_id)).to_not be_empty
+				client.get_vehicle_positions_by_route_id(route_id).each do |vehicle_position|
+					expect(vehicle_position).to have_key 'vehicle'
+		      expect(vehicle_position['vehicle']['trip']['route_id']).to eql route_id
+				end
+			end
+		end
+
+		context 'with route id that does not exist' do
+			it 'responds with an empty collection' do
+				route_id = 'abc123'
+
+				expect(client.get_vehicle_positions_by_route_id(route_id)).to be_empty
+			end
+		end
+
+		context 'without parameters' do
+			it 'raises an argument error' do
+				expect {
+					client.get_vehicle_positions_by_route_id
+				}.to raise_error ArgumentError
+			end
+		end
+
+	end
 end
