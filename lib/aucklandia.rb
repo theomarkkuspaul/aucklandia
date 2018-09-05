@@ -1,3 +1,5 @@
+require "aucklandia/support/requestable"
+
 require "aucklandia/version"
 require "aucklandia/routes"
 require "aucklandia/trips"

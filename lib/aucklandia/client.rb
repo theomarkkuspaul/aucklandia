@@ -4,6 +4,8 @@ module Aucklandia
     include Aucklandia::Trips
     include Aucklandia::VehiclePositions
 
+    include Requestable
+
     attr_reader :authorization_key
     def initialize(authorization_key)
       @authorization_key = authorization_key

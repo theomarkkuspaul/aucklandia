@@ -3,14 +3,11 @@ module Aucklandia
     VEHICLE_POSITIONS_ENDPOINT = '/public/realtime/vehiclelocations'
 
     def get_vehicle_positions(trip_id=nil)
-      url = [BASE_URL, VEHICLE_POSITIONS_ENDPOINT].join('')
+      params = { tripid: trip_id } if trip_id
 
-      url << "?tripid=#{trip_id}" if trip_id
+      url = build_url(BASE_URL, VEHICLE_POSITIONS_ENDPOINT, params: params)
 
-      response = RestClient::Request.execute(method: :get,
-                                             url: url,
-                                             headers: headers)
-                                    .body
+      response = get(url)
 
       JSON.parse(response)['response']['entity']
     end
