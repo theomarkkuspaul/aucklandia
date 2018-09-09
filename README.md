@@ -51,6 +51,10 @@ client.get_vehicle_positions(trip_id)
 route_id = '<route-id>'
 client.get_vehicle_positions_by_route_id(route_id)
 
+# GET all shape points by trip ID
+trip_id = '<trip-id>'
+client.get_shapes_by_trip(trip_id)
+
 # GET all versions
 client.get_versions
 ```
