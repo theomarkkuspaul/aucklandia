@@ -53,6 +53,10 @@ client.get_vehicle_positions_by_route_id(route_id)
 
 # GET all versions
 client.get_versions
+
+# GET all stops by trip ID
+trip_id = '<trip-id>'
+client.get_stops_by_trip_id(trip_id)
 ```
 
 ## Development
