@@ -53,6 +53,10 @@ client.get_vehicle_positions_by_route_id(route_id)
 
 # GET all versions
 client.get_versions
+
+# GET stop times for a specific stop
+stop_id = '<stop-id>'
+client.get_stop_times_by_stop_id(stop_id)
 ```
 
 ## Development

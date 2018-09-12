@@ -4,7 +4,8 @@ module Aucklandia
     include Aucklandia::Trips
     include Aucklandia::VehiclePositions
     include Aucklandia::Versions
-
+    include Aucklandia::StopTimes
+    
     include Requestable
 
     attr_reader :authorization_key
