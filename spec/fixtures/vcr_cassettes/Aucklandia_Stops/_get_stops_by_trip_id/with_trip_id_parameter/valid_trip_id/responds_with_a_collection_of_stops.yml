@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 11 Sep 2018 06:17:51 GMT
+      - Wed, 12 Sep 2018 05:38:03 GMT
       Server:
       - Apache/2.4.33 (Win64) OpenSSL/1.1.0h
       Access-Control-Allow-Origin:
@@ -42,7 +42,7 @@ http_interactions:
       Cache-Control:
       - max-age=0
       Expires:
-      - Tue, 11 Sep 2018 06:17:53 GMT
+      - Wed, 12 Sep 2018 05:38:03 GMT
       Transfer-Encoding:
       - chunked
     body:
@@ -128,5 +128,5 @@ http_interactions:
         WRGRXFfSJ80MnKpWUrD77WyuPJrzwsDZqZ/v5PafF1f9fr/bnz7uz/8D61ct
         /vCIAAA=
     http_version: 
-  recorded_at: Tue, 11 Sep 2018 06:17:52 GMT
+  recorded_at: Wed, 12 Sep 2018 05:38:03 GMT
 recorded_with: VCR 4.0.0
