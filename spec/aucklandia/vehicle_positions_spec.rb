@@ -42,7 +42,7 @@ RSpec.describe Aucklandia::VehiclePositions do
 		end
 
 		context 'with route id that does not exist' do
-			it 'responds with an empty collection' do
+			it 'responds with an empty collection', vcr: true do
 				route_id = 'abc123'
 
 				expect(client.get_vehicle_positions_by_route_id(route_id)).to be_empty
@@ -50,7 +50,7 @@ RSpec.describe Aucklandia::VehiclePositions do
 		end
 
 		context 'without parameters' do
-			it 'raises an argument error' do
+			it 'raises an argument error', vcr: true do
 				expect {
 					client.get_vehicle_positions_by_route_id
 				}.to raise_error ArgumentError
