@@ -5,6 +5,7 @@ module Aucklandia
     include Aucklandia::VehiclePositions
     include Aucklandia::Versions
     include Aucklandia::Shapes
+    include Aucklandia::Notifications
 
     include Requestable
 

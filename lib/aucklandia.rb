@@ -6,6 +6,7 @@ require "aucklandia/trips"
 require "aucklandia/vehicle_positions"
 require "aucklandia/versions"
 require "aucklandia/shapes"
+require "aucklandia/notifications"
 require "aucklandia/client"
 
 require 'rest-client'
