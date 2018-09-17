@@ -55,6 +55,9 @@ client.get_vehicle_positions_by_route_id(route_id)
 trip_id = '<trip-id>'
 client.get_shapes_by_trip(trip_id)
 
+# GET all notifications
+client.get_notifications
+
 # GET all versions
 client.get_versions
 ```
