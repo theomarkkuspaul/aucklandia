@@ -58,6 +58,10 @@ client.get_shapes_by_trip(trip_id)
 # GET all notifications
 client.get_notifications
 
+# GET all notifications by category
+category = 'MOVED_STOP', 'ROAD', 'EVENTS', 'REAL_TIME', 'HIGHWAY'
+client.get_notifications_by_category(category)
+
 # GET all versions
 client.get_versions
 ```
