@@ -5,6 +5,7 @@ module Aucklandia
     include Aucklandia::VehiclePositions
     include Aucklandia::Versions
     include Aucklandia::Stops
+    include Aucklandia::Shapes
 
     include Requestable
 
