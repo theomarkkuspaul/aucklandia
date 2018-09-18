@@ -17,5 +17,15 @@ module Aucklandia
 
     	JSON.parse(response)['response']
     end
+
+    def get_notifications_by_stop_id(stop_id)
+      url = build_url(BASE_URL, NOTIFICATIONS_ENDPOINT, '/stop/', stop_id)
+
+      response = get(url)
+
+      data = JSON.parse(response)
+
+      data.has_key?('response') ? data['response'] : []
+    end
   end
 end
