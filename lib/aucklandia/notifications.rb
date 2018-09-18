@@ -9,5 +9,13 @@ module Aucklandia
 
       JSON.parse(response)['response']
     end
+
+    def get_notifications_by_category(category)
+    	url = build_url(BASE_URL, NOTIFICATIONS_ENDPOINT, '/', category)
+
+    	response = get(url)
+
+    	JSON.parse(response)['response']
+    end
   end
 end
