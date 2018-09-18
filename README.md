@@ -57,6 +57,10 @@ client.get_shapes_by_trip(trip_id)
 
 # GET all versions
 client.get_versions
+
+# GET all stops by trip ID
+trip_id = '<trip-id>'
+client.get_stops_by_trip_id(trip_id)
 ```
 
 ## Development

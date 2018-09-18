@@ -5,6 +5,7 @@ require "aucklandia/routes"
 require "aucklandia/trips"
 require "aucklandia/vehicle_positions"
 require "aucklandia/versions"
+require "aucklandia/stops"
 require "aucklandia/shapes"
 require "aucklandia/client"
 
