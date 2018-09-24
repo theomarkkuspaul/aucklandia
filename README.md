@@ -84,6 +84,9 @@ client.get_stops_by_trip_id(trip_id)
 # GET all stop times by trip ID
 trip_id = '<trip-id>'
 client.get_stop_times_by_trip_id
+
+# GET all calendars
+client.get_calendars
 ```
 
 ## Development
