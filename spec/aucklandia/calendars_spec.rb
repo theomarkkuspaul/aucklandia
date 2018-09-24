@@ -10,8 +10,8 @@ RSpec.describe Aucklandia::Calendars do
 				response = client.get_calendars
 
 				expect(response).to_not be_empty
-				response.each do |date|
-					expect(date).to include 'service_id', 'monday', 'tuesday',
+				response.each do |calendar|
+					expect(calendar).to include 'service_id', 'monday', 'tuesday',
 																	'wednesday', 'thursday', 'friday', 
 																	'saturday', 'sunday', 'start_date', 'end_date'
 				end
