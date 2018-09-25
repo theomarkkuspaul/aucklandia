@@ -61,6 +61,9 @@ client.get_versions
 # GET all stops by trip ID
 trip_id = '<trip-id>'
 client.get_stops_by_trip_id(trip_id)
+
+# GET all scheduled works
+client.get_scheduled_works
 ```
 
 ## Development
