@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.at.govt.nz/v2/notifications/stop/7035
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.2.3p173
+      Ocp-Apim-Subscription-Key:
+      - "<SECRET>"
+      Host:
+      - api.at.govt.nz
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 Sep 2018 06:24:32 GMT
+      Server:
+      - Apache/2.4.34 (Win64) OpenSSL/1.1.0i
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD
+      Access-Control-Allow-Headers:
+      - Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token, Access-Control-Expose-Headers,
+        Authorization, Ocp-Apim-Subscription-Key, X-Crm-Id
+      Content-Length:
+      - '656'
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept,Accept-Encoding,User-Agent
+      Cache-Control:
+      - max-age=0
+      Expires:
+      - Tue, 18 Sep 2018 06:24:32 GMT
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","response":[{"attributes":{"OBJECTID":1,"AFFECTEDSTOPID":7035,"AFFECTEDROUTE":"76X,802X,820,822,834,837,839,858,85X,863X,866X,86X,873X,874X,875,877X,879,87X,900X,920,922,945X,952,956","NEWSTOPID":1079,"NEWSTOPNAME":"137
+        Wellesley St","NEWSTOPEXISTINGROUTE":"OUT","NEWSTOPSTATUS":"Existing Stop","NEWSTOPNOTE":""}},{"attributes":{"OBJECTID":2,"AFFECTEDSTOPID":7035,"AFFECTEDROUTE":"76X,802X,820,822,834,837,839,858,85X,863X,866X,86X,873X,874X,875,877X,879,87X,900X,920,922,945X,952,956","NEWSTOPID":1083,"NEWSTOPNAME":"Wellesley
+        St near Hobson St","NEWSTOPEXISTINGROUTE":"OUT","NEWSTOPSTATUS":"Existing
+        Stop","NEWSTOPNOTE":""}}],"error":null}'
+    http_version: 
+  recorded_at: Tue, 18 Sep 2018 06:24:33 GMT
+recorded_with: VCR 4.0.0

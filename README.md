@@ -55,6 +55,17 @@ client.get_vehicle_positions_by_route_id(route_id)
 trip_id = '<trip-id>'
 client.get_shapes_by_trip(trip_id)
 
+# GET all notifications
+client.get_notifications
+
+# GET all notifications by category
+category = 'MOVED_STOP', 'ROAD', 'EVENTS', 'REAL_TIME', 'HIGHWAY'
+client.get_notifications_by_category(category)
+
+# GET all notifications by stop ID
+stop_id = '<stop-id>'
+client.get_notifications_by_stop_id(stop_id)
+
 # GET all versions
 client.get_versions
 
