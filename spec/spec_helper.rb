@@ -26,3 +26,7 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+def initialize_client
+  Aucklandia::Client.new(ENV['AUCKLANDIA_SECRET'])
+end

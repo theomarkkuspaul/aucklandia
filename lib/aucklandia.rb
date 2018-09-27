@@ -8,6 +8,7 @@ require "aucklandia/versions"
 require "aucklandia/stops"
 require "aucklandia/shapes"
 require "aucklandia/notifications"
+require "aucklandia/parking_locations"
 require "aucklandia/client"
 
 require 'rest-client'

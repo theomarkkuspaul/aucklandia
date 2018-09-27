@@ -7,6 +7,7 @@ module Aucklandia
     include Aucklandia::Stops
     include Aucklandia::Shapes
     include Aucklandia::Notifications
+    include Aucklandia::ParkingLocations
 
     include Requestable
 
