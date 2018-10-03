@@ -6,6 +6,7 @@ module Aucklandia
     include Aucklandia::Versions
     include Aucklandia::Stops
     include Aucklandia::Shapes
+    include Aucklandia::StopTimes
     include Aucklandia::Notifications
 
     include Requestable
