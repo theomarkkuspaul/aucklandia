@@ -9,6 +9,7 @@ module Aucklandia
     include Aucklandia::ScheduledWorks
     include Aucklandia::StopTimes
     include Aucklandia::Notifications
+    include Aucklandia::ParkingLocations
     include Aucklandia::Calendars
     include Aucklandia::CalendarDates
 
