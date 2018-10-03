@@ -3,6 +3,20 @@ require 'spec_helper'
 RSpec.describe Aucklandia::Trips do
   let(:client) { Aucklandia::Client.new(ENV['AUCKLANDIA_SECRET']) }
 
+  describe '#get_trips' do
+    context 'successful response' do
+      it 'responds with a collection (albeit hefty) of trips', vcr: true do
+        response = client.get_trips
+
+        expect(response).to_not be_empty
+        response.each do |trip|
+          expect(trip).to include 'route_id', 'service_id', 'trip_id',
+                                  'trip_headsign', 'shape_id', 'direction_id'
+        end
+      end
+    end
+  end
+
   describe '#get_trips_by_route' do
     context 'when route exists' do
       it 'responds with a collection of trips', vcr: true do

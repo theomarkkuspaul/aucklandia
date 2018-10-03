@@ -36,6 +36,9 @@ client.get_routes
 route_short_name = "OUT"
 client.get_routes_by_short_name(route_short_name)
 
+# GET all trips. Watch out as A LOT of data comes back.
+client.get_trips
+
 # GET all trips by route ID
 route_id = '12345'
 client.get_trips_by_route_id(route_id)
