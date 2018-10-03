@@ -43,13 +43,18 @@ client.get_trips_by_route_id(route_id)
 # GET all live vehicle positions
 client.get_vehicle_positions
 
-# GET all live vehicles positions by trip ID
+# GET all live vehicles positions. Optional parameters include trip ID or vehicle ID
 trip_id = '<trip-id>'
-client.get_vehicle_positions(trip_id)
+vehicle_id = '<vehicle-id>'
+client.get_vehicle_positions(trip_id: trip_id, vehicle_id: vehicle_id)
 
 # GET all live vehicle positions by route ID
 route_id = '<route-id>'
 client.get_vehicle_positions_by_route_id(route_id)
+
+# GET a single vehicle position by vehicle id
+vehicle_id = '<vehicle-id>'
+client.get_vehicle_position_by_vehicle_id(vehicle_id)
 
 # GET all shape points by trip ID
 trip_id = '<trip-id>'

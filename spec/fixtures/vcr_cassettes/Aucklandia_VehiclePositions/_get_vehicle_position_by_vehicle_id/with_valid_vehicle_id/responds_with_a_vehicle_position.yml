@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.at.govt.nz/v2/public/realtime/vehiclelocations?vehicleid=5C3D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.2.3p173
+      Ocp-Apim-Subscription-Key:
+      - "<SECRET>"
+      Host:
+      - api.at.govt.nz
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Sep 2018 06:11:03 GMT
+      Server:
+      - Apache/2.4.34 (Win64) OpenSSL/1.1.0i
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD
+      Access-Control-Allow-Headers:
+      - Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token, Access-Control-Expose-Headers,
+        Authorization, Ocp-Apim-Subscription-Key, X-Crm-Id
+      Content-Length:
+      - '505'
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept,Accept-Encoding,User-Agent
+      Cache-Control:
+      - max-age=0
+      Expires:
+      - Wed, 19 Sep 2018 06:11:02 GMT
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","response":{"entity":[{"id":"2a0bae86-ee84-1373-508b-d718372f221c","is_deleted":false,"vehicle":{"trip":{"trip_id":"1122109129-20180910114240_v70.21","route_id":"13304-20180910114240_v70.21","start_time":"17:45:00","schedule_relationship":0},"vehicle":{"id":"5C3D"},"position":{"latitude":-36.86395,"longitude":174.64805,"bearing":"207"},"timestamp":1537337445.744,"occupancy_status":1}}],"header":{"gtfs_realtime_version":"1.0","incrementality":0,"timestamp":1537337464.619}},"error":null}'
+    http_version: 
+  recorded_at: Wed, 19 Sep 2018 06:11:03 GMT
+recorded_with: VCR 4.0.0
