@@ -8,6 +8,8 @@ module Aucklandia
     include Aucklandia::Shapes
     include Aucklandia::StopTimes
     include Aucklandia::Notifications
+    include Aucklandia::Calendars
+    include Aucklandia::CalendarDates
 
     include Requestable
 

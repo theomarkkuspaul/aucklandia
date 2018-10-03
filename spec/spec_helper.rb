@@ -27,7 +27,6 @@ RSpec.configure do |config|
   end
 end
 
-
 def initialize_client
   Aucklandia::Client.new(ENV['AUCKLANDIA_SECRET'])
 end
