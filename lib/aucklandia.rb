@@ -8,6 +8,7 @@ require "aucklandia/versions"
 require "aucklandia/stops"
 require "aucklandia/stop_times"
 require "aucklandia/shapes"
+require "aucklandia/notifications"
 require "aucklandia/client"
 
 require 'rest-client'
