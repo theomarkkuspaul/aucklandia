@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.at.govt.nz/v2/public/realtime/vehiclelocations?vehicleid=wellwellwelllookeehere
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.2.3p173
+      Ocp-Apim-Subscription-Key:
+      - "<SECRET>"
+      Host:
+      - api.at.govt.nz
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Sep 2018 06:11:05 GMT
+      Server:
+      - Apache/2.4.34 (Win64) OpenSSL/1.1.0i
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD
+      Access-Control-Allow-Headers:
+      - Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token, Access-Control-Expose-Headers,
+        Authorization, Ocp-Apim-Subscription-Key, X-Crm-Id
+      Content-Length:
+      - '140'
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept,Accept-Encoding,User-Agent
+      Cache-Control:
+      - max-age=0
+      Expires:
+      - Wed, 19 Sep 2018 06:11:06 GMT
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","response":{"entity":[],"header":{"gtfs_realtime_version":"1.0","incrementality":0,"timestamp":1537337467.529}},"error":null}'
+    http_version: 
+  recorded_at: Wed, 19 Sep 2018 06:11:06 GMT
+recorded_with: VCR 4.0.0

@@ -36,6 +36,9 @@ client.get_routes
 route_short_name = "OUT"
 client.get_routes_by_short_name(route_short_name)
 
+# GET all trips. Watch out as A LOT of data comes back.
+client.get_trips
+
 # GET all trips by route ID
 route_id = '12345'
 client.get_trips_by_route_id(route_id)
@@ -43,17 +46,33 @@ client.get_trips_by_route_id(route_id)
 # GET all live vehicle positions
 client.get_vehicle_positions
 
-# GET all live vehicles positions by trip ID
+# GET all live vehicles positions. Optional parameters include trip ID or vehicle ID
 trip_id = '<trip-id>'
-client.get_vehicle_positions(trip_id)
+vehicle_id = '<vehicle-id>'
+client.get_vehicle_positions(trip_id: trip_id, vehicle_id: vehicle_id)
 
 # GET all live vehicle positions by route ID
 route_id = '<route-id>'
 client.get_vehicle_positions_by_route_id(route_id)
 
+# GET a single vehicle position by vehicle id
+vehicle_id = '<vehicle-id>'
+client.get_vehicle_position_by_vehicle_id(vehicle_id)
+
 # GET all shape points by trip ID
 trip_id = '<trip-id>'
 client.get_shapes_by_trip(trip_id)
+
+# GET all notifications
+client.get_notifications
+
+# GET all notifications by category
+category = 'MOVED_STOP', 'ROAD', 'EVENTS', 'REAL_TIME', 'HIGHWAY'
+client.get_notifications_by_category(category)
+
+# GET all notifications by stop ID
+stop_id = '<stop-id>'
+client.get_notifications_by_stop_id(stop_id)
 
 # GET all versions
 client.get_versions
@@ -64,6 +83,13 @@ client.get_stops_by_trip_id(trip_id)
 
 # GET all scheduled works
 client.get_scheduled_works
+
+# GET all stop times by trip ID
+trip_id = '<trip-id>'
+client.get_stop_times_by_trip_id
+
+# GET all calendars
+client.get_calendars
 ```
 
 ## Development

@@ -7,6 +7,10 @@ module Aucklandia
     include Aucklandia::Stops
     include Aucklandia::Shapes
     include Aucklandia::ScheduledWorks
+    include Aucklandia::StopTimes
+    include Aucklandia::Notifications
+    include Aucklandia::Calendars
+    include Aucklandia::CalendarDates
 
     include Requestable
 

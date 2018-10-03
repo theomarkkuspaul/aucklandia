@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.at.govt.nz/v2/gtfs/stopTimes/tripId/469145964-20180910122836_v70.22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.7.0 x86_64) ruby/2.2.3p173
+      Ocp-Apim-Subscription-Key:
+      - "<SECRET>"
+      Host:
+      - api.at.govt.nz
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Sep 2018 06:27:42 GMT
+      Server:
+      - Apache/2.4.34 (Win64) OpenSSL/1.1.0i
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD
+      Access-Control-Allow-Headers:
+      - Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token, Access-Control-Expose-Headers,
+        Authorization, Ocp-Apim-Subscription-Key, X-Crm-Id
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Vary:
+      - Accept,Accept-Encoding,User-Agent
+      Cache-Control:
+      - max-age=0
+      Expires:
+      - Thu, 20 Sep 2018 06:27:40 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAC82b3W7jNhBG30XX6YLk8P8VetEHKBaGEWu7RlPbleUAxSLv
+        XqqVINExB4N6gE4udWzFPhhx5qPkH9113I+3a5e7X37uXrqhv17Op2vf5V9/
+        dONwvOyOh8KsT9q65O1PRumoklbamAh+9x7UF2PKG/fDcHzfv+3G4x/lzZ0x
+        2bqsVCGH/rIfxtvQP2DX8Tz/h6BcbJ78n5dd+z9v/em1nEHPR773+8P1+Nup
+        y6fb29tLdzm+/n677Ma/Lv1y6DCU152/fasOXr/vL/3ucLyOu3HYv/dv/WFB
+        00e8nI+ncTmw/V7lI7yeT4ciK+qk1P1Xu8MfL08b9FmZlsGZbQxqQzZoJBj0
+        BjXoDYPBkAFaBme2NegV1SD8/waNcoAYnDCDwZihWYMzqwySa9AKMKg1VoMT
+        ZjCYMtiWwZmtBqNT5Bp0EgwGixoM9nmDTmXTqsGFVQYN1aAXYLD8YQbLH4NB
+        nXVsGZzZxqCl12CQYDBE1GCILAZd6ypeWGWQXINRgEHQ6FVcMIPBstw1Dc6s
+        Mtg++Z3BJMGgxw16DoOQwbcMzqwy6MkTtRKg0GqPKSyYQaHNRrcUzqxSSA8l
+        AlKJsV6jCr1mUOhKubQUzmyrUJN7iRYQS4zTWLCbMItC12zHM6sUkpuJlpBL
+        nEP7ccEMCn22rqVwZpVCcjfREoKJVw5TWDCDwpBNaimcWaWQ3k4kJBNvE6rQ
+        JgaFEanC+KAK6e1EQjQJBq3CghkUpmyba+HMtgoNvZ1IyCYhomthwc8qhKxU
+        to/z8coqhfR2IiGclA+MKSyYQWEJwY8v5JVVCuntREI6iQG9kAtmUGjKotVS
+        OLNKIbmdGAnpJAGaTgpmUAitWyYrqxTSN/wlpJMU0dG6YBaF7vFQs7JVoY70
+        HX9DSif6kz/NIg8UYOPMhBnk2Wyb8ma2rT+gyxOQS0BFXGHkUOha48zKKoXk
+        XmwE5BLQFhtnJsyg0LdumKxsqzAlskIBuQR0wnYKJ8ygMCKNJH66926iIysU
+        kEvAoI1kwiwK2+NMvB9ndKBv+BsBuQRMwsaZCbMotIhCezcRgqdPhAJyCYBB
+        FRbMoDC19qtXtqlCq+lroYBcAoDuV0+YRWF7Ikz3E2FMAORnQATkEoCEDjUF
+        P69Qq7JoNRQubKuQvs0FAnIJ2GlFbissmEWha+3RLKxSSF4LQcBdE7AO26OZ
+        MINC3XqYa2WVQvIeDUhIJzZhT3NNmEGhac+FC6sUkocakJBOnEHnwoJZFLrW
+        TuHCKoX0RwolpBOH7hROmEGhRarQfq5C+k14kJBOvEWrsGAGhS6bVkZeWKUw
+        kBVKSCfBoBm5YAaFvvUcw8oqheSMDBLSSQhoFRbMoDC075osrFJIH60lpJMI
+        6FpYMIPCmFUrIy+sUqjJz1dLSCcxohm5YBaFzS3XhW1/aGLIGdlKSCfJoFuu
+        BT+v0Kh2R17Y9gnrSB6t7X+8a8Lmzyr0lzoT/vj60vXDcB7+PdXH3yXliFYV
+        NQAA
+    http_version: 
+  recorded_at: Thu, 20 Sep 2018 06:27:42 GMT
+recorded_with: VCR 4.0.0
