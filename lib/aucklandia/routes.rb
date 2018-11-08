@@ -17,5 +17,13 @@ module Aucklandia
 
       JSON.parse(response)['response']
     end
+
+    def get_route_by_id(route_id)
+      url = build_url(BASE_URL, ROUTE_ENDPOINT, '/routeId/', route_id)
+
+      response = get(url)
+
+      JSON.parse(response)['response'].first
+    end
   end
 end

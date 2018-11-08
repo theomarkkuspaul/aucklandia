@@ -30,4 +30,26 @@ RSpec.describe Aucklandia::Routes do
       end
     end
   end
+
+  describe '#get_route_by_id' do
+    context 'route id exists' do
+      let(:id) { '73902-20181026152814_v71.31' } # route_short_name: 739
+
+      it 'responds with the route', vcr: true do
+        response = client.get_route_by_id(id)
+
+        expect(response['route_id']).to eq id
+      end
+    end
+
+    context 'route id does not exist' do
+      let(:id) { 'wutangagain?' }
+
+      it 'responds with nothing', vcr: true do
+        response = client.get_route_by_id(id)
+
+        expect(response).to be_nil
+      end
+    end
+  end
 end
