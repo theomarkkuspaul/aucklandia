@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.at.govt.nz/v2/gtfs/routes/routeId/73902-20181026152814_v71.31
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin18.0.0 x86_64) ruby/2.2.3p173
+      Ocp-Apim-Subscription-Key:
+      - "<SECRET>"
+      Host:
+      - api.at.govt.nz
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Nov 2018 08:06:29 GMT
+      Server:
+      - Apache/2.4.34 (Win64) OpenSSL/1.1.0i
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD
+      Access-Control-Allow-Headers:
+      - Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token, Access-Control-Expose-Headers,
+        Authorization, Ocp-Apim-Subscription-Key, X-Crm-Id
+      Content-Length:
+      - '300'
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept,Accept-Encoding,User-Agent
+      Cache-Control:
+      - max-age=0
+      Expires:
+      - Thu, 08 Nov 2018 08:06:30 GMT
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","response":[{"route_id":"73902-20181026152814_v71.31","agency_id":"GBT","route_short_name":"739","route_long_name":"Botany
+        To Beachlands And Maraetai Via Ormiston And Whitford","route_desc":null,"route_type":3,"route_url":null,"route_color":null,"route_text_color":null}],"error":null}'
+    http_version: 
+  recorded_at: Thu, 08 Nov 2018 08:06:29 GMT
+recorded_with: VCR 4.0.0
